@@ -1,0 +1,1 @@
+print la photo en fullscreen quand on clique dessus (mais pas la version toute petite, prendre elle avec la plus grande resolution au cas ou y en a plusieurs)
