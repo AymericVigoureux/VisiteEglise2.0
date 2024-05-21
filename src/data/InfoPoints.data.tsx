@@ -2,7 +2,7 @@ import { InfoPointProps } from "../components/InfoPoint/InfoPoint"
 import Image1 from '../img/img_Parcour_court/Ep1.jpg'
 import Image2 from '../img/img_Parcour_court/Ep2.jpg'
 import Image3 from '../img/img_Parcour_court/Ep3.jpg'
-import Image4 from '../img/img_Parcour_court/Ep5.jpg'
+import Image4 from '../img/img_Parcour_court/Ep4.jpg'
 import Image5 from '../img/img_Parcour_court/Ep5.jpg'
 
 export const shortPoints: InfoPointProps[] = [
