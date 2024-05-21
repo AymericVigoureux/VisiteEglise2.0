@@ -16,7 +16,7 @@ const InfoPage = () => {
 
 	const { infoTheme } = useParams();
 	const { infoPointSlice }: {infoPointSlice: InfoPointSliceProps} = useLocation().state;
-	const [ indexContent, setIndexContent ] = useState<number>(1);
+	const [ indexContent, setIndexContent ] = useState<number>(0);
 
 
 	const activeVidBtn = useCallback(() => {

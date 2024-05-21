@@ -25,7 +25,7 @@ export interface InfoPointProps {
 const InfoPoint = ({ num, infoPopup, selected = false, $top, $left, onSelected }: InfoPointProps) => {
 	
 
-	const [radius, setRadius] = useState<string>('5%')
+	const [radius, setRadius] = useState<string>('10%')
 	const [read, setRead] = useState<number[]>([]);
 
 	return (

@@ -14,7 +14,7 @@ interface PopupProps {
 
 const Popup = ({ parkourType, infoPointSlice, popupRef }: PopupProps) => {
 
-	console.log("infoPointSlice = ", infoPointSlice)
+	console.log("infoPointSlice = ", infoPointSlice.num)
 	// console.log("infoPointSlice.title.replace(/\s+/g, '-').toLowerCase() = ", infoPointSlice.title.replace(/\s+/g, '-').toLowerCase())
 
 
@@ -32,7 +32,7 @@ const Popup = ({ parkourType, infoPointSlice, popupRef }: PopupProps) => {
 		doPrint={infoPointSlice.num > 0} parkourType={parkourType}>
 			<PopupHeaderInfo>
 				<PopupTitleImg>
-					<PopupTitle>Station {infoPointSlice.num}</PopupTitle>
+					<PopupTitle>Etape {infoPointSlice.num}</PopupTitle>
 					{ infoPointSlice.image && <PopupImage src={infoPointSlice.image} />}
 				</PopupTitleImg>
 				<PopupExtraText>{infoPointSlice.title}</PopupExtraText>

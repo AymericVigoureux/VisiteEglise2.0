@@ -140,5 +140,5 @@ export const PopupBtn = styled(Link)`
 	user-select: none;
 	text-align: center;
 	touch-action: manipulation;
-	margin: 1% 5% 1% 0%;
+	margin: 1% 10% 1% 0%;
 `

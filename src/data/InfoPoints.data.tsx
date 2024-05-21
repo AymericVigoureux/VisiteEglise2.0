@@ -1,7 +1,9 @@
 import { InfoPointProps } from "../components/InfoPoint/InfoPoint"
-import Image1 from '../img/bubble.jpg'
-import Image2 from '../img/image-attractive.jpg'
-import Image3 from '../img/forest.jpg'
+import Image1 from '../img/img_Parcour_court/Ep1.jpg'
+import Image2 from '../img/img_Parcour_court/Ep2.jpg'
+import Image3 from '../img/img_Parcour_court/Ep3.jpg'
+import Image4 from '../img/img_Parcour_court/Ep5.jpg'
+import Image5 from '../img/img_Parcour_court/Ep5.jpg'
 
 export const shortPoints: InfoPointProps[] = [
 	{
@@ -21,6 +23,7 @@ export const shortPoints: InfoPointProps[] = [
 		infoPopup: {
 			title: "Le Choeur",
 			description: "station 2",
+			image: Image2,
 			video: "https://youtube.com/embed/xIV_dyiasJk?autoplay=0",
 			done: false,
 
@@ -32,6 +35,7 @@ export const shortPoints: InfoPointProps[] = [
 		num: 3,
 		infoPopup: {
 			title: "Le retable du Parlement",
+			image: Image3,
 			video: "https://youtube.com/embed/-a-bBZxg068?autoplay=0",
 			done: true,
 
@@ -43,6 +47,7 @@ export const shortPoints: InfoPointProps[] = [
 		num: 4,
 		infoPopup: {
 			title: "Le Transept Droit",
+			image: Image4,
 			video: "https://youtube.com/embed/CeOisoa41ro?autoplay=0",
 			done: true,
 
@@ -54,6 +59,7 @@ export const shortPoints: InfoPointProps[] = [
 		num: 5,
 		infoPopup: {
 			title: "La Tribune d'Orgue",
+			image: Image5,
 			video: "https://youtube.com/embed/mXNx8Tiui8I?autoplay=0",
 			done: true,
 
