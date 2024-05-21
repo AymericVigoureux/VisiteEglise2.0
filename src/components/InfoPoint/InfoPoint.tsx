@@ -10,6 +10,7 @@ export interface InfoPopup {
 	done: boolean,
 	image?: string,
 	description?: string,
+	video?: string,
 }
 
 export interface InfoPointProps {
@@ -35,7 +36,8 @@ const InfoPoint = ({ num, infoPopup, selected = false, $top, $left, onSelected }
 				title: infoPopup.title,
 				done: infoPopup.done,
 				image: infoPopup.image,
-				description: infoPopup.description
+				description: infoPopup.description,
+				video: infoPopup.video,
 			}) : undefined}
 			selected={selected} $top={$top} $left={$left} radius={radius}>
 				<InfoNumber viewBox="0 0 30 18">

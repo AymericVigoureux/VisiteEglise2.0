@@ -39,7 +39,7 @@ const InfoPage = () => {
 				<HomeBgnd />
 				<InfoHeader>
 					<InfoTitleContainer>
-						<InfoTitle>Station {infoPointSlice.num} :<br />{infoPointSlice.title}</InfoTitle>
+						<InfoTitle>Etape {infoPointSlice.num} :<br />{infoPointSlice.title}</InfoTitle>
 					</InfoTitleContainer>
 					{ infoPointSlice.image &&
 						<InfoImgContainer>
@@ -62,11 +62,11 @@ const InfoPage = () => {
 				<InfoContentContainer index={indexContent}>
 					<InfoVidContainer>
 						<InfoVidTextTitle>L'ultime guide de rédaction</InfoVidTextTitle>
-						<InfoVidText>Lisez une sélection d'articles de journalistes de renommée mondiale.</InfoVidText>
+						<InfoVidText>Lisez une sélection d'articles de journalistes de renommée mondiale. {infoPointSlice.description}</InfoVidText>
 						<InfoVidMiniText>Publié le ...</InfoVidMiniText>
 						<YtbIFrameContainer>
 							<YtbIFrame
-								width="560" height="315" src={"https://www.youtube.com/embed/0V8yNAZZfSE"}
+								width="560" height="315" src= {infoPointSlice.video}
 								title="YouTube video player"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								allowFullScreen />

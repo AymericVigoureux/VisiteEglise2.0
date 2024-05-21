@@ -7,33 +7,59 @@ export const shortPoints: InfoPointProps[] = [
 	{
 		num: 1,
 		infoPopup: {
-			title: "Test number 1",
+			title: "Contexte et architecture",
 			done: true,
 			image: Image1,
-			description: "Ceci decrit en quelques mots ce qu'on va savoir sur le truc en question mais voila apres tu connais on ecrit des trucs en fonction de ce qu'on pense, on ecrit a l'aide de ses connaissances et ca c'est vraiment super"
+			video: "https://youtube.com/embed/nAU6g6trLqg?autoplay=0",
+			description: "embed/Ceci decrit en quelques mots ce qu'on va savoir sur le truc en question mais voila apres tu connais on ecrit des trucs en fonction de ce qu'on pense, on ecrit a l'aide de ses connaissances et ca c'est vraiment super"
 		},
 		$left: "48.5%",
-		$top: "80%",
+		$top: "98%",
 	},
 	{
 		num: 2,
 		infoPopup: {
-			title: "This is the number 2 but with a very long title that is really long",
+			title: "Le Choeur",
+			description: "station 2",
+			video: "https://youtube.com/embed/xIV_dyiasJk?autoplay=0",
 			done: false,
 
 		},
-		$left: "40.5%",
-		$top: "32.7%",
+		$left: "41.5%",
+		$top: "42.7%",
 	},
 	{
 		num: 3,
 		infoPopup: {
-			title: "This is the number 3",
+			title: "Le retable du Parlement",
+			video: "https://youtube.com/embed/-a-bBZxg068?autoplay=0",
 			done: true,
 
 		},
-		$left: "57.5%",
-		$top: "52.7%",
+		$left: "20%",
+		$top: "37%",
+	},
+	{
+		num: 4,
+		infoPopup: {
+			title: "Le Transept Droit",
+			video: "https://youtube.com/embed/CeOisoa41ro?autoplay=0",
+			done: true,
+
+		},
+		$left: "78%",
+		$top: "37%",
+	},
+	{
+		num: 5,
+		infoPopup: {
+			title: "La Tribune d'Orgue",
+			video: "https://youtube.com/embed/mXNx8Tiui8I?autoplay=0",
+			done: true,
+
+		},
+		$left: "55%",
+		$top: "60%",
 	},
 ]
 
