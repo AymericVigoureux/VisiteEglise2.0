@@ -10,13 +10,16 @@ import InfoVid from "./InfoVid";
 import InfoText from "./InfoText";
 import Footer from "../Footer/Footer";
 import { InfoVidContainer, InfoVidMiniText, InfoVidText, InfoVidTextTitle, YtbIFrame, YtbIFrameContainer } from "./InfoVid.styled";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 
 const InfoPage = () => {
 
 	const { infoTheme } = useParams();
 	const { infoPointSlice }: {infoPointSlice: InfoPointSliceProps} = useLocation().state;
-	const [ indexContent, setIndexContent ] = useState<number>(0);
+	const isVideo = () => {if(infoPointSlice.video){return 0}else{return 1}}
+	const [ indexContent, setIndexContent ] = useState<number>(isVideo());
 
 
 	const activeVidBtn = useCallback(() => {
@@ -31,53 +34,105 @@ const InfoPage = () => {
 	const onBtnClick = useCallback((setToSelected: () => void) => {
 		setToSelected();
 	}, []);
+
 	
+	const printHeaderVideoText = () => {
+		const headers : JSX.Element[] = []
+		if (infoPointSlice.video){
+			headers.push(
+				<Tab>Vidéo</Tab>
+			);
+		}
+		if (infoPointSlice.description){
+			headers.push(
+				<Tab>Text</Tab>
+			);
+		}
+		return headers;
+	}
+
+	const printVideoText = () => {
+		const VideoText : JSX.Element[] = []
+		if (infoPointSlice.video){
+			VideoText.push(
+				<TabPanel>
+					<InfoVid/>
+				</TabPanel>
+			);
+		}
+		if (infoPointSlice.description){
+			VideoText.push(
+				<TabPanel>
+					<InfoText/>
+				</TabPanel>
+			);
+		}
+		return VideoText;
+	}
 
 	return (
 		<React.Fragment>
-			<MainContainerWindow>
-				<HomeBgnd />
-				<InfoHeader>
-					<InfoTitleContainer>
-						<InfoTitle>Etape {infoPointSlice.num} :<br />{infoPointSlice.title}</InfoTitle>
-					</InfoTitleContainer>
+			<Tabs>
+			<HomeBgnd />
+	 			<InfoHeader>
+	 				<InfoTitleContainer>
+	 					<InfoTitle>Etape {infoPointSlice.num} :<br />{infoPointSlice.title}</InfoTitle>
+	 				</InfoTitleContainer>
 					{ infoPointSlice.image &&
-						<InfoImgContainer>
+	 					<InfoImgContainer>
 							<InfoImg src={infoPointSlice.image} />
-						</InfoImgContainer>
-					}
-					<InfoBtnsContainer>
-						<InfoBtn selected={indexContent === 0}
-						onClick={() => onBtnClick(activeVidBtn)}>
-							Vidéo
-							<InfoBtnImg src={VideoSvg} />
-						</InfoBtn>
-						<InfoBtn selected={indexContent === 1}
-						onClick={() => onBtnClick(activeWritBtn)}>
-							Texte
-							<InfoBtnImg src={TextSvg} />
-						</InfoBtn>
-					</InfoBtnsContainer>
+	 					</InfoImgContainer>
+	 				}
+					<TabList>
+						{printHeaderVideoText()}
+					</TabList>
 				</InfoHeader>
-				<InfoContentContainer index={indexContent}>
-					<InfoVidContainer>
-						<InfoVidTextTitle>L'ultime guide de rédaction</InfoVidTextTitle>
-						<InfoVidText>Lisez une sélection d'articles de journalistes de renommée mondiale. {infoPointSlice.description}</InfoVidText>
-						<InfoVidMiniText>Publié le ...</InfoVidMiniText>
-						<YtbIFrameContainer>
-							<YtbIFrame
-								width="560" height="315" src= {infoPointSlice.video}
-								title="YouTube video player"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowFullScreen />
-						</YtbIFrameContainer>
-					</InfoVidContainer>
-					<InfoText />
-				</InfoContentContainer>
-				<Footer />
-			</MainContainerWindow>
+				{printVideoText()}
+			</Tabs>
+			<Footer />
 		</React.Fragment>
 	)
+
+
+	// return (
+	// 	<React.Fragment>
+	// 		<MainContainerWindow>
+	// 			<HomeBgnd />
+	// 			<InfoHeader>
+	// 				<InfoTitleContainer>
+	// 					<InfoTitle>Etape {infoPointSlice.num} :<br />{infoPointSlice.title}</InfoTitle>
+	// 				</InfoTitleContainer>
+	// 				{ infoPointSlice.image &&
+	// 					<InfoImgContainer>
+	// 						<InfoImg src={infoPointSlice.image} />
+	// 					</InfoImgContainer>
+	// 				}
+	// 				<InfoBtnsContainer>
+	// 					{printHeaderVideoText()}
+						
+	// 				</InfoBtnsContainer>
+	// 			</InfoHeader>
+	// 			<InfoContentContainer index={indexContent}>
+	// 				<InfoVidContainer>
+	// 					<InfoVidTextTitle>Vidéo</InfoVidTextTitle>
+	// 					<InfoVidText>{infoPointSlice.description}</InfoVidText>
+	// 					<InfoVidMiniText>Mettez des écouteurs</InfoVidMiniText>
+	// 					<YtbIFrameContainer>
+	// 						<YtbIFrame
+	// 							width="560" height="315" src= {infoPointSlice.video}
+	// 							title="YouTube video player"
+	// 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+	// 							allowFullScreen />
+	// 					</YtbIFrameContainer>
+	// 				</InfoVidContainer>
+	// 				<InfoTextContainer>
+	// 					<p>{infoPointSlice.description}</p>
+	// 				</InfoTextContainer>
+	// 			</InfoContentContainer>
+	// 			<Footer />
+	// 		</MainContainerWindow>
+	// 	</React.Fragment>
+	// )
 }
 
 export default InfoPage;

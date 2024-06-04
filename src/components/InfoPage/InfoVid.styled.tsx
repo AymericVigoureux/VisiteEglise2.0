@@ -4,9 +4,9 @@ export const InfoVidContainer = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
 	margin: 1em calc((100% - 95%) / 2);
 	width: 90%;
+	box-sizing: border-box;
 `
 
 export const InfoVidTextTitle = styled.p`

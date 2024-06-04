@@ -5,6 +5,8 @@ import Image3 from '../img/img_Parcour_court/Ep3.jpg'
 import Image4 from '../img/img_Parcour_court/Ep4.jpg'
 import Image5 from '../img/img_Parcour_court/Ep5.jpg'
 
+
+
 export const shortPoints: InfoPointProps[] = [
 	{
 		num: 1,
@@ -13,7 +15,7 @@ export const shortPoints: InfoPointProps[] = [
 			done: true,
 			image: Image1,
 			video: "https://youtube.com/embed/nAU6g6trLqg?autoplay=0",
-			description: "embed/Ceci decrit en quelques mots ce qu'on va savoir sur le truc en question mais voila apres tu connais on ecrit des trucs en fonction de ce qu'on pense, on ecrit a l'aide de ses connaissances et ca c'est vraiment super"
+			description: 'Bienvenue à l\’église du Saint-Esprit, un joyau historique niché au cœur du centre-ville d\’Aix-en-Provence. Venez découvrir cette église fascinante, dont la construction a commencé en 1706 sur les fondations d\’un ancien hôpital médiéval, et qui a été consacrée en 1806. Plongez dans son histoire riche et tumultueuse, marquée par des figures illustres telles que le comte de Mirabeau, Mgr de Miollis, et même le pape Pie VII. Admirez l\’architecture intérieure baroque, ingénieusement conçue pour maximiser l\’espace malgré une façade sobre due à des contraintes budgétaires. Aujourd\'hui, l\'église du Saint-Esprit est un lieu dynamique, particulièrement apprécié des étudiants. Rejoignez-nous pour une visite captivante et laissez-vous émerveiller par ce trésor d’Aix-en-Provence. 5 vidéos vous permettront de découvrir l\’histoire de l\’église et de ses œuvres. Commençons sans plus tarder par le contexte de sa construction et son architecture…'
 		},
 		$left: "48.5%",
 		$top: "98%",
@@ -22,7 +24,7 @@ export const shortPoints: InfoPointProps[] = [
 		num: 2,
 		infoPopup: {
 			title: "Le Choeur",
-			description: "station 2",
+			description: "test 2",
 			image: Image2,
 			video: "https://youtube.com/embed/xIV_dyiasJk?autoplay=0",
 			done: false,

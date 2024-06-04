@@ -43,17 +43,22 @@ export const InfoBtnImg = styled.img`
 `
 
 export const InfoContentContainer = styled.div`
-	position: relative;
+	position: static;
 	display: flex;
+	// overflow-x: auto;
+	// overflow-y: scroll;
 	transform: translateX(${(props: InfoContentContainerProps) => props.index * -100}%);
 	flex: 1 1 auto;
-	transition: all ${speedTransition};
+	transition: transform ${speedTransition} ease;
 	
 	& > * {
 		flex: 0 0 100%;
+		box-sizing: border-box;
+		opacity: 0;
+    	transition: opacity ${speedTransition} ease;
 	}
 
 	& :nth-of-type(${(props: InfoContentContainerProps) => props.index + 1}) {
-		opacity: 100%;
+		opacity: 1;
 	}
 `
