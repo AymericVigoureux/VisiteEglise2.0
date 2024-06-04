@@ -30,14 +30,12 @@ const LanguageModal = () => {
 			flagsRef.current.push(
 				<ImgFlag src={flag} onClick={() => onFlagClick(language)} />
 			)
-			console.log("flagsRef.current gooo (apres push) = ", flagsRef.current)
 			if ((index + 1) % modulo === 0) {
 				const temp = (
 					<LanguageFlagsContainer key={index}>
 						{ flagsRef.current }
 					</LanguageFlagsContainer>
 				)
-				console.log("flagsRef.current gooo = ", flagsRef.current)
 				flagsRef.current = [];
 				return temp;
 			}
@@ -47,7 +45,6 @@ const LanguageModal = () => {
 						{ flagsRef.current }
 					</LanguageFlagsContainer>
 				)
-				console.log("flagsRef.current gooo = ", flagsRef.current)
 				flagsRef.current = [];
 				return temp;
 			}

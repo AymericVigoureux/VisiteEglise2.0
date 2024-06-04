@@ -39,6 +39,7 @@ export const InfoVidMiniText = styled.p`
 
 export const YtbIFrameContainer = styled.div`
 	position: relative;
+	margin-left: 1rem;
 	flex: 1 1 auto;
 `
 

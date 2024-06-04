@@ -57,9 +57,6 @@ const Home = () => {
 		if (popupRef.current) {
 			const popupDim = popupRef.current.getBoundingClientRect();
 	
-			console.log("e.clientX = ", e.clientX, "  e.clientY = ", e.clientY)
-			// console.log("popupDim.x = ", popupDim.x, "  (popupDim.x + popupDim.width) = ", (popupDim.x + popupDim.width))
-			// console.log("popupDim.y = ", popupDim.y, "  (popupDim.y + popupDim.width) = ", (popupDim.y + popupDim.height))
 			if ((e.clientX < popupDim.x || e.clientX > (popupDim.x + popupDim.width))
 			|| (e.clientY < popupDim.y || e.clientY > (popupDim.y + popupDim.height))) {
 				dispatch(remove());

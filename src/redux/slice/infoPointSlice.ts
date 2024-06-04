@@ -5,7 +5,8 @@ export type InfoPointSliceProps = {
 	title: string,
 	done: boolean,
 	image?: string,
-	description?: string,
+	description?: string[],
+	textarea?: string,
 	video?: string,
 }
 
@@ -21,6 +22,7 @@ const infoPointSlice = createSlice({
 			state.done = action.payload.done
 			state.image = action.payload.image
 			state.description = action.payload.description
+			state.textarea = action.payload.textarea
 			state.video = action.payload.video
 		},
 		remove(state) {
@@ -29,6 +31,7 @@ const infoPointSlice = createSlice({
 			state.done = false
 			state.image = undefined
 			state.description = undefined
+			state.textarea = undefined
 			state.video = undefined
 		}
 	}

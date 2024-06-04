@@ -43,7 +43,7 @@ const InfoPage = () => {
 				<Tab>Vidéo</Tab>
 			);
 		}
-		if (infoPointSlice.description){
+		if (infoPointSlice.textarea){
 			headers.push(
 				<Tab>Text</Tab>
 			);
@@ -52,7 +52,7 @@ const InfoPage = () => {
 	}
 
 	const printVideoText = () => {
-		const VideoText : JSX.Element[] = []
+		const VideoText : JSX.Element[] = [];
 		if (infoPointSlice.video){
 			VideoText.push(
 				<TabPanel>
@@ -60,7 +60,7 @@ const InfoPage = () => {
 				</TabPanel>
 			);
 		}
-		if (infoPointSlice.description){
+		if (infoPointSlice.textarea){
 			VideoText.push(
 				<TabPanel>
 					<InfoText/>

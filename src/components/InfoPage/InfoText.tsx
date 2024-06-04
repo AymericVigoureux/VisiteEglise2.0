@@ -12,7 +12,7 @@ const InfoText = () => {
 	return (
 		<p>
 			<InfoVidTextTitle>Text</InfoVidTextTitle>
-			<InfoVidText>{infoPointSlice.description}</InfoVidText>
+			<InfoVidText>{infoPointSlice.textarea}</InfoVidText>
 		</p>
 	)
 }

@@ -14,10 +14,6 @@ interface PopupProps {
 
 const Popup = ({ parkourType, infoPointSlice, popupRef }: PopupProps) => {
 
-	console.log("infoPointSlice = ", infoPointSlice.num)
-	// console.log("infoPointSlice.title.replace(/\s+/g, '-').toLowerCase() = ", infoPointSlice.title.replace(/\s+/g, '-').toLowerCase())
-
-
 	const getHref = useCallback(() : string => {
 		if (infoPointSlice.num > -1) {
 			return ('/info/' + infoPointSlice.title.replace(/\s+/g, '-').toLowerCase());

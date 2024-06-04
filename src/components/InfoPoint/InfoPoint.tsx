@@ -9,7 +9,8 @@ export interface InfoPopup {
 	title: string,
 	done: boolean,
 	image?: string,
-	description?: string,
+	description?: string[],
+	textarea?: string,
 	video?: string,
 }
 
@@ -37,6 +38,7 @@ const InfoPoint = ({ num, infoPopup, selected = false, $top, $left, onSelected }
 				done: infoPopup.done,
 				image: infoPopup.image,
 				description: infoPopup.description,
+				textarea: infoPopup.textarea,
 				video: infoPopup.video,
 			}) : undefined}
 			selected={selected} $top={$top} $left={$left} radius={radius}>
