@@ -10,7 +10,7 @@ export interface InfoPopup {
 	done: boolean,
 	image?: string,
 	description?: string[],
-	textarea?: string,
+	textarea?: string[],
 	video?: string,
 }
 
@@ -18,8 +18,8 @@ export interface InfoPointProps {
 	num: number,
 	infoPopup: InfoPopup
 	selected?: boolean,
-	$top?: string
-	$left?: string,
+	$top: string
+	$left: string,
 	onSelected?: (infoPoint: InfoPointSliceProps) => void
 }
 
@@ -45,7 +45,7 @@ const InfoPoint = ({ num, infoPopup, selected = false, $top, $left, onSelected }
 				<InfoNumber viewBox="0 0 30 18">
 					<text x="50%" y="50%">{num}</text>
 				</InfoNumber>
-			</InfoCircle>
+			</InfoCircle>	
 		</React.Fragment>
 	)
 }

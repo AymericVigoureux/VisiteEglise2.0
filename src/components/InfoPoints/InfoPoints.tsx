@@ -4,7 +4,7 @@ import InfoPoint, { InfoPointProps } from "../InfoPoint/InfoPoint"
 import { useDispatch, useSelector } from "react-redux"
 import { select, remove, InfoPointSliceProps } from "../../redux/slice/infoPointSlice"
 import { RootState } from "../../redux/store"
-import { shortPoints } from "../../data/InfoPoints.data"
+import { longPoints, shortPoints } from "../../data/InfoPoints.data"
 
 
 interface InfoPointsProps {
@@ -35,6 +35,17 @@ const InfoPoints = ({ parkourType }: InfoPointsProps) => {
 			return (
 				<React.Fragment>
 					{shortPoints.map((infoPoint: InfoPointProps) => (
+						<React.Fragment key={infoPoint.num}>
+							<InfoPoint {...infoPoint} onSelected={onPointSelected} selected={currInfoPoint?.num === infoPoint.num} />
+						</React.Fragment>
+					))}
+				</React.Fragment>
+			)
+		}
+		if (parkourType === 'long') {
+			return (
+				<React.Fragment>
+					{longPoints.map((infoPoint: InfoPointProps) => (
 						<React.Fragment key={infoPoint.num}>
 							<InfoPoint {...infoPoint} onSelected={onPointSelected} selected={currInfoPoint?.num === infoPoint.num} />
 						</React.Fragment>

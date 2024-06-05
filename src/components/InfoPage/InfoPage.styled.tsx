@@ -26,6 +26,16 @@ export const InfoImgContainer = styled.div`
 	height: 20vh;
 `
 
+// export const InfoImgContainerText = styled.div`
+// 	position: relative;
+// 	height: 20vh;
+// 	padding: 1rem;
+// `
+export const InfoImgContainerText = styled.div`
+	text-align: center;
+  	padding: 0.5rem;
+`
+
 export const InfoImg = styled.img`
 	position: relative;
 	border: solid 1px black;
@@ -34,3 +44,17 @@ export const InfoImg = styled.img`
 	width: 100%;
 	height: 100%;
 `
+export const InfoImgText = styled.img`
+	margin: 0 auto; 
+	max-width: calc(100% - 4rem); 
+	height: auto;
+	display: block;
+`
+
+// export const InfoImgText = styled.img`
+// 	position: relative;
+// 	box-sizing: border-box;
+// 	object-fit: cover;
+// 	width: 100%;
+// 	height: 100%;
+// `

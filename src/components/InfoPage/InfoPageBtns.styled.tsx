@@ -45,8 +45,6 @@ export const InfoBtnImg = styled.img`
 export const InfoContentContainer = styled.div`
 	position: static;
 	display: flex;
-	// overflow-x: auto;
-	// overflow-y: scroll;
 	transform: translateX(${(props: InfoContentContainerProps) => props.index * -100}%);
 	flex: 1 1 auto;
 	transition: transform ${speedTransition} ease;

@@ -6,7 +6,7 @@ export type InfoPointSliceProps = {
 	done: boolean,
 	image?: string,
 	description?: string[],
-	textarea?: string,
+	textarea?: string[],
 	video?: string,
 }
 
