@@ -26,6 +26,14 @@ export const InfoVidText = styled.p`
 	margin-right: 1rem;
 	font-size: 0.8rem;
 `
+export const InfoPriere = styled.p`
+	margin-top: 0;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+	font-size: 0.8rem;
+	font-style: italic;
+`
 export const InfoVidSubText = styled.p`
 	margin-top: 0;
 	margin-left: 3rem;

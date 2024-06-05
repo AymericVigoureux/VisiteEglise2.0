@@ -1,5 +1,5 @@
 import { InfoPointSliceProps } from "../../redux/slice/infoPointSlice";
-import {  InfoVidTextTitle,InfoVidMiniText, InfoVidText,InfoVidSubText } from "./InfoVid.styled"
+import {  InfoVidTextTitle,InfoVidMiniText, InfoVidText,InfoVidSubText,InfoPriere } from "./InfoVid.styled"
 import { InfoHeader, InfoImgText, InfoImgContainerText, InfoTitle, InfoTitleContainer } from "./InfoPage.styled";
 import { useLocation, useParams } from "react-router-dom";
 import { TabPanel } from "react-tabs"
@@ -29,6 +29,9 @@ const InfoText = () => {
 				}
 				else if(elements[typeText] === "SubText"){
 					titleTextImg.push(<InfoVidSubText>{elements[typeText + 1]}</InfoVidSubText>)
+				}
+				else if(elements[typeText] === "Priere"){
+					titleTextImg.push(<InfoPriere><p dangerouslySetInnerHTML={{ __html: elements[typeText + 1] }} /></InfoPriere>)
 				}
 			}
 		}
