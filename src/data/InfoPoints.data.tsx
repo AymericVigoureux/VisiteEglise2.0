@@ -571,7 +571,7 @@ export const longPoints: InfoPointProps[] = [
 			done: false,
 
 		},
-		$left: "5%",
+		$left: "6%",
 		$top: "36%",
 	},
 	{
@@ -643,5 +643,78 @@ export const longPoints: InfoPointProps[] = [
 		},
 		$left: "42%",
 		$top: "72%",
+	},
+	{
+		num: 100,
+		infoPopup: {
+			title: "Vitrail de la Pentecôte",
+			image: Image5,
+			textarea: [
+				"Title","Vitrail de la Pentecôte:",
+				"Text","C’est le peintre Louis André, d’Aix (1852-1938), qui réalisa en 1882, à la demande du chanoine Emery, les sept verrières polychromes de la nef et les vitraux du chœur : Pentecôte, saint Jérôme, saint Maximin, évêque et du transept : saint Antoine et saint Paul ermites et la communion de la Vierge.",
+			],
+			done: false,
+		},
+		$left: "49%",
+		$top: "0%",
+	},
+	{
+		num: 200,
+		infoPopup: {
+			title: "Vitrail de Saint Jérôme",
+			image: Image5,
+			textarea: [
+				"Title","Vitrail de Saint Jérôme:",
+				"Text","Saint Jérôme est le saint patron de cette église. Ce patronage a été choisi pour rendre hommage au cardinal Jérôme de Grimaldi, qui a beaucoup oeuvré pour la création de cette paroisse.",
+				"Text","Saint Jérôme est un grand traducteur de la Bible du Ve siècle, au tempérament fort. Il est souvent représenté avec un lion accroupi qui représente les passions vaincues, et le séjour du saint au désert, et fait aussi référence à l’anecdote selon laquelle il aurait retiré une épine du pied d’un lion. Il vivait dans la pensée de l'imminence de la venue définitive du Christ, qu’on appelle le jugement dernier, annoncée par les trompettes dans le dernier livre de la bible. Vous retrouverez la représentation du patron de cette église sur une des statues du choeur et sur un immense tableau au-dessus des confessionnaux.",
+			],
+			done: false,
+		},
+		$left: "0%",
+		$top: "20%",
+	},
+	{
+		num: 300,
+		infoPopup: {
+			title: "Vitrail de l'Évêque Saint Maximin",
+			image: Image5,
+			textarea: [
+				"Title","Vitrail de l'Évêque Saint Maximin:",
+				"Text","Saint Maximin d'Aix est, selon la tradition catholique, le premier évêque d'Aix-en-Provence au 1er siècle, sans doute à partir de 45. ",
+				"Text","Il débarque en Provence en compagnie de sainte Marie Madeleine. Avec Saint Lazare à Marseille et les Sainte Marie Jacobée et Salomée en Camargues, ce seront les premiers chrétiens à évangéliser ce que nous appelons aujourd’hui la France. c'est lui qui inhume la sainte, dans la Tradition provençale, et se fait ensuite inhumer à ses côtés. Leurs tombeaux deviennent un lieu de culte et de pèlerinage important du christianisme médiéval connu aujourd’hui sous le nom de la Sainte Baume.",
+			],
+			done: false,
+		},
+		$left: "100%",
+		$top: "19%",
+	},
+	{
+		num: 400,
+		infoPopup: {
+			title: "Vitrail de Saint Antoine et Saint Paul ermites",
+			image: Image5,
+			textarea: [
+				"Title","Vitrail de Saint Antoine et Saint Paul ermites:",
+				"Text","Saint Antoine ou Saint Thomas l’Ermite ? ou saint Antoine rendant visite à saint Paul l’Ermite ?",
+				"Text","Antoine le Grand, également connu comme Antoine d’Égypte, Antoine l’Ermite, ou encore Antoine du désert, est un moine considéré comme le père du monachisme chrétien. Il serait né vers 251 et mort vers 356 à l’âge de 105 ans, entre les bras de ses deux disciples, Macaire l’Ancien ou Macaire d’Égypte et Amathias.  Il est fêté sous le nom de saint Antoine le 17 janvier.",
+				"Text","Saint Paul Ermite, premier ermite selon saint Jérôme est l’une des figures fondatrices du monachisme, avec saint Antoine. Il semblerait que le premier récit de sa vie soit dû justement à saint Jérôme, mais des doutes existent quant à son historicité. Jacques de Voragine, dans sa Légende dorée, lui consacre un chapitre.",
+			],
+			done: false,
+		},
+		$left: "0%",
+		$top: "42%",
+	},
+	{
+		num: 500,
+		infoPopup: {
+			title: "Vitrail de la Communion de la Sainte Vierge",
+			image: Image5,
+			textarea: [
+				"Title","Vitrail de la Communion de la Sainte Vierge:",
+			],
+			done: false,
+		},
+		$left: "100%",
+		$top: "34%",
 	},
 ]
