@@ -23,26 +23,33 @@ const Popup = ({ parkourType, infoPointSlice, popupRef }: PopupProps) => {
 
 
 	return (
-		<PopupContainer ref={popupRef} done={infoPointSlice.done}
-		isMobile={(window.navigator as any).userAgentData.mobile}
-		doPrint={infoPointSlice.num > 0} parkourType={parkourType}>
-			<PopupHeaderInfo>
-				<PopupTitleImg>
-					<PopupTitle>Etape {infoPointSlice.num}</PopupTitle>
-					{ infoPointSlice.image && <PopupImage src={infoPointSlice.image} />}
-				</PopupTitleImg>
-				<PopupExtraText>{infoPointSlice.title}</PopupExtraText>
-			</PopupHeaderInfo>
-			<PopupBtnWrapper>
-				{ infoPointSlice.done && <PopupDoneText>Déjà lu !</PopupDoneText>}
-				<PopupBtnContainer>
-					<PopupBtn to={getHref()} role="button"
-					state={{ infoPointSlice }}>
-						Regarder
-					</PopupBtn>
-				</PopupBtnContainer>
-			</PopupBtnWrapper>
-		</PopupContainer>
+  		<PopupContainer
+  		  ref={popupRef}
+  		  done={infoPointSlice.done}
+  		  isMobile={
+  		    (window.navigator as any).userAgentData?.mobile ?? 
+  		    /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+  		  }
+  		  doPrint={infoPointSlice.num > 0}
+  		  parkourType={parkourType}
+  		>
+  		  <PopupHeaderInfo>
+  		    <PopupTitleImg>
+  		      <PopupTitle>Etape {infoPointSlice.num}</PopupTitle>
+  		      {infoPointSlice.image && <PopupImage src={infoPointSlice.image} />}
+  		    </PopupTitleImg>
+  		    <PopupExtraText>{infoPointSlice.title}</PopupExtraText>
+  		  </PopupHeaderInfo>
+	  
+  		  <PopupBtnWrapper>
+  		    {infoPointSlice.done && <PopupDoneText>Déjà lu !</PopupDoneText>}
+  		    <PopupBtnContainer>
+  		      <PopupBtn to={getHref()} role="button" state={{ infoPointSlice }}>
+  		        Regarder
+  		      </PopupBtn>
+  		    </PopupBtnContainer>
+  		  </PopupBtnWrapper>
+  		</PopupContainer>
 	)
 };
 
