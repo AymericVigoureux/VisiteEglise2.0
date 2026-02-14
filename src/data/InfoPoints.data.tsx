@@ -27,7 +27,7 @@ import Image_Parc_long_7_2  from '../img/img_Parcour_long/Parc_long_7.2 Samuel.j
 import Image_Parc_long_8_0  from '../img/img_Parcour_long/Parc_long_8.0 BANDEAU_ND Bonsecours.jpg'
 import Image_Parc_long_9_0  from '../img/img_Parcour_long/Parc_long_9.0 BANDEAU_Pentecôte.jpg'
 import Image_Parc_long_10_0 from '../img/img_Parcour_long/Parc_long_10.0 BANDEAU_Simon Pharisien.jpg'
-import Image_Parc_long_10_1 from '../img/img_Parcour_long/Parc_long_10.1 Les lamentations du Christ, détail de Marie-Madeleine et les pieds du Christ, c.1490 de Sandro Botticelli.jpg'
+import Image_Parc_long_10_1 from '../img/img_Parcour_long/Parc_long_10.1 Les lamentations du Christ.jpg'
 import Image_Parc_long_11_0 from '../img/img_Parcour_long/Parc_long_11.0 BANDEAU_Jeanne.jpg'
 import Image_Parc_long_11_1 from '../img/img_Parcour_long/Parc_long_11.1_Stilke Hermann Anton - Joan of Arc s Death at the Stake.jpg'
 import Image_Parc_long_12_0 from '../img/img_Parcour_long/Parc_long_12.0_Ensemble tableaux.jpg'
